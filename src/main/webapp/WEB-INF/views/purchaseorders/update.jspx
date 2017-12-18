@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_root_domain_PurchaseOrder" modelAttribute="purchaseOrder" path="/purchaseorders" versionField="Version" z="IObGnr+nvWH5EhNGnxcFv8CxZPU=">
+        <field:datetime dateTimePattern="${purchaseOrder_startdate_date_format}" field="startDate" id="c_root_domain_PurchaseOrder_startDate" z="uvKoaWfDhjotBfqeH/PoirndHcY="/>
+        <field:datetime dateTimePattern="${purchaseOrder_enddate_date_format}" field="endDate" id="c_root_domain_PurchaseOrder_endDate" z="oWfOHJJaVO+iTxK/rStPYAEhA40="/>
+        <field:input field="total" id="c_root_domain_PurchaseOrder_total" validationMessageCode="field_invalid_number" z="Q//CwaCU14+Ycw/I8sYAl0nSu70="/>
+        <field:select field="status" id="c_root_domain_PurchaseOrder_status" items="${postatuses}" path="postatuses" z="rWMntWH/rmogsHHqqEsN4oI+VUo="/>
+        <field:select field="plant" id="c_root_domain_PurchaseOrder_plant" itemValue="id" items="${plants}" path="/plants" z="8k7IKa2K0NmPcjNooLScpxHEOxo="/>
+    </form:update>
+</div>

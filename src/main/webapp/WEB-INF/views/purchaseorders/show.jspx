@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_root_domain_PurchaseOrder" object="${purchaseorder}" path="/purchaseorders" z="6Vg/07jz4ZOmOJXpr3Ih8C6Irsw=">
+        <field:display date="true" dateTimePattern="${purchaseOrder_startdate_date_format}" field="startDate" id="s_root_domain_PurchaseOrder_startDate" object="${purchaseorder}" z="NHfEzyv7UDWSg69T1u/SZD1L7Ug="/>
+        <field:display date="true" dateTimePattern="${purchaseOrder_enddate_date_format}" field="endDate" id="s_root_domain_PurchaseOrder_endDate" object="${purchaseorder}" z="mlJhGW/NCu3Bn4m+e737XtdM4Gw="/>
+        <field:display field="total" id="s_root_domain_PurchaseOrder_total" object="${purchaseorder}" z="cyUkHzRtEtGifR8SbRyWE2QtbGs="/>
+        <field:display field="status" id="s_root_domain_PurchaseOrder_status" object="${purchaseorder}" z="Sa9UQDXhK/yGokW3SlC5VoAK1B8="/>
+        <field:display field="plant" id="s_root_domain_PurchaseOrder_plant" object="${purchaseorder}" z="KwrFbXJYtBjSdED91NUixwV7/Ws="/>
+    </page:show>
+</div>
