@@ -23,7 +23,7 @@ import root.domain.PurchaseOrder;
 @Controller
 @RooWebScaffold(path = "purchaseorders", formBackingObject = PurchaseOrder.class)
 public class PurchaseOrderController {
-	@RequestMapping(value="/postpo",method = RequestMethod.POST)
+	@RequestMapping(value="/postpo",method = RequestMethod.POST,headers = "Accept=application/json")
     public ResponseEntity<Void> save(@RequestBody PurchaseOrder res) {
 		PurchaseOrder p = new PurchaseOrder();
 		p.setStartDate(res.getStartDate());
